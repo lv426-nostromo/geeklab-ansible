@@ -1,0 +1,18 @@
+#
+# This group is read both both by the client and the server
+# use it for options that affect everything
+#
+# Example .my.cnf file for setting the root password
+
+[client-server]
+
+#
+# include *.cnf from the config directory
+#
+!includedir /etc/my.cnf.d
+
+[mysqld]
+bind-address           = 0.0.0.0
+server-id              = 2
+log_bin                = /var/log/mysql/mysql-bin.log
+binlog-format=row

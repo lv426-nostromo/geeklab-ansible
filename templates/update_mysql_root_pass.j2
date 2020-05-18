@@ -1,0 +1,3 @@
+use mysql;
+set password for 'root'@'localhost' = password('{{mysql_root_password}}');
+flush privileges;
