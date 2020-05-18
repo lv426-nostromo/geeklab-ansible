@@ -44,12 +44,13 @@ roles_path = /home/user/projects/ansible/geeklab-ansible/roles
     mysql_repluser_pass: <== пароль пользователя для репликации
     mysql_db_user: <== пользователь базы данных проекта
     mysql_user_password: <== его пароль
-    mysql_project_db: <== база данных проекта```
+    mysql_project_db: <== база данных проекта
+    ```
 
     4. Закомментировать импорты ненужных тасков или импортировать нужные 
 
     5. Запустить исполнение плейбука:
 
-    ` ansible-playbook -vv tasks/main.yml '
+    `ansible-playbook -vv tasks/main.yml`
     
-    -v, -vv, -vvv  - вывод короче/подробнее 
+    где  -v, -vv, -vvv  - вывод короче/подробнее 
