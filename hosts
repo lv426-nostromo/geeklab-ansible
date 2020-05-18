@@ -1,0 +1,8 @@
+[geeklb]
+192.168.1.139 ansible_connection=ssh ansible_ssh_user=user
+[geekweb]
+192.168.1.159 ansible_connection=ssh ansible_ssh_user=user
+192.168.1.186 ansible_connection=ssh ansible_ssh_user=user 
+
+
+
