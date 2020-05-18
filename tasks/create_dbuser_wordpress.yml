@@ -1,0 +1,26 @@
+
+      - name: Create database user and grant privileges
+        mysql_user:
+            login_user: root
+            login_password: '{{mysql_root_password}}'
+            name: '{{mysql_db_user}}'
+            password: '{{mysql_user_password}}'
+            priv: '"{{mysql_project_db}}".*:ALL'
+            state: present
+            # no_log: True
+
+
+      - name: Create a new database for wordpress
+        mysql_db:
+            login_user: root
+            login_password: '{{mysql_root_password}}'
+            name: '{{mysql_project_db}}'
+            state: present
+            # no_log: True
+
+
+
+
+
+
+
